@@ -1,0 +1,44 @@
+.Banner {
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+
+.image-container {
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+
+/* Image de fond */
+.image-container img {
+  width: -webkit-fill-available;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 30px;
+  filter: brightness(0.5);
+}
+
+/* Style du texte */
+.image-container .text-overlay {
+  position: absolute;
+  top: 50%;  /* Centre le texte verticalement */
+  left: 50%; /* Centre le texte horizontalement */
+  transform: translate(-50%, -50%); /* Ajuste pour un centrage parfait */
+  color: white;
+  font-size: 41px;
+  font-weight: bolder;
+  text-shadow: -2px -2px 0 black,; /* Ombre pour plus de lisibilité */
+}
