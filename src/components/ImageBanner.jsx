@@ -22,12 +22,13 @@ export default function ImageBanner({ pictures }) {
               src={pic}
               alt=""
               className={i === currentPicture ? "show" : ""}
-            />
-          ))
-        ) : (
-          <img src="image-banner-montagne.png" className="showMontagne" alt="" />
-        )}
-      </div>
+              />
+            ))
+          ) : (
+            <p>Aucune image disponible</p>  
+          )}
+        </div>
+  
 
       {pictures && pictures.length > 0 && (
         <>
