@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div className="footer">
       <div>
-        <img src="logo-black.png" alt="logo" width="100" />
+        <img src="../public/logo-black.png" alt="logo" width="100" />
       </div>
       <div>© 2020 Kasa. All rights reserved</div>
     </div>

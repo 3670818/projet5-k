@@ -1,15 +1,16 @@
 import React from "react";
 import "./Banner.scss";
 
-function Banner() {
+function ImageBanner({ imageSrc, altText, textOverlay }) {
   return (
-    <div className='Banner'>
-    <div class="image-container">
-      <img src="image-banner.png" alt="Votre description d'image"></img>
-      <div class="text-overlay">Chez vous, partout et ailleurs</div>
+    <div className="banner">
+      <div className="image-container">
+        <img src={imageSrc} alt={altText} />
+        {textOverlay && <div className="text-overlay">{textOverlay}</div>}
+      </div>
     </div>
-  </div>
   );
 }
 
-export default Banner;
+export default ImageBanner;
+

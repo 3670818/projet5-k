@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Navigate } from "react-router-dom";
 import db from "../../public/db.json"; // Importez directement le fichier JSON
-import { ImageBanner } from "../components/ImageBanner";
 import { ApartmentHeader } from "../components/ApartmentHeader";
 import { DescriptionPanel } from "../components/DescriptionPanel";
 import "./ApartmentPage.scss";
+import ImageBanner from "../components/ImageBanner"; // ✅ Correct (export par défaut)
+
 
 function ApartmentPage() {
   const { id } = useParams();
@@ -34,6 +35,7 @@ function ApartmentPage() {
         host={logement.host}
         rating={logement.rating}
       />
+      <div className="description-container">
       <DescriptionPanel
         title="description"
         content={logement.description}
@@ -43,6 +45,9 @@ function ApartmentPage() {
       title="equiments"
       content={equipements}
       />
+
+      </div>
+      
     </div>
   );
 }

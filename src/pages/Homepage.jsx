@@ -6,7 +6,11 @@ import ApartmentGrid from "../components/ApartmentGrid.jsx";
 function HomePage() {
   return (
     <>
-      <Banner />
+       <Banner 
+      imageSrc="image-banner.png" 
+      altText="Bannière principale" 
+	  textOverlay="Chez vous, partout et ailleurs"
+    />
       <ApartmentGrid />
     </>
   );

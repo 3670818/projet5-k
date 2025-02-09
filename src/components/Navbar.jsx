@@ -7,14 +7,14 @@ function Navbar() {
     <nav className="navbar">
       <NavLink to="/">
         <div className="navbar__logo">
-          <img src="logo.png" alt="Logo" />
+        <img src="../public/logo.png" alt="logo" />
         </div>
       </NavLink>
       <NavLink to="/">
-        <div>Accueil</div>
+        <a>Accueil</a>
       </NavLink>
       <NavLink to="/about">
-        <div>A propos</div>
+        <a>A propos</a>
       </NavLink>
     </nav>
   );
