@@ -1,5 +1,4 @@
 .description__panel {
-  /* margin-bottom: 1rem; */
   flex-basis: 50%;
   overflow: hidden;
   padding-inline: inherit;
@@ -49,7 +48,6 @@
 
 @media screen and (max-width: 1200px) {
   .description__panel {
-    /* margin-bottom: 1rem; */
     flex-basis: 50%;
     overflow: hidden;
     padding-inline: 0px;

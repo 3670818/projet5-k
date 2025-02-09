@@ -1,4 +1,3 @@
-
 import React from "react"
 import Banner from "../layout/Banner.jsx";
 import { DescriptionPanel } from "../components/DescriptionPanel";
