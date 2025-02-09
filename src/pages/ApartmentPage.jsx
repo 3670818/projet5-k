@@ -1,20 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Navigate } from "react-router-dom";
-import db from "../../public/db.json"; // Importez directement le fichier JSON
+import db from "../../public/db.json"; 
 import { ApartmentHeader } from "../components/ApartmentHeader";
 import { DescriptionPanel } from "../components/DescriptionPanel";
 import "./ApartmentPage.scss";
-import ImageBanner from "../components/ImageBanner"; // ✅ Correct (export par défaut)
+import ImageBanner from "../components/ImageBanner";  
 
 
 function ApartmentPage() {
   const { id } = useParams();
-  
-
-  
     const logement = db.find((logement) => logement.id === id);
-  
-  
   if (!logement) {
     return <Navigate replace to="/404" />;
   }

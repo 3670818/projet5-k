@@ -17,7 +17,6 @@ export default function About() {
 					key={id}
 					title={rule.aboutTitle}
 					content={rule.aboutText}
-					// aboutStyle="about-style"
 				/>
 			))}
 		</>

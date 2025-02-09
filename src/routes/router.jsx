@@ -1,7 +1,7 @@
 import React from "react";
 import { createBrowserRouter } from "react-router-dom";
 import HeaderFooterLayout from "../components/HeaderFooterLayout";
-import HomePage from "../pages/HomePage";
+import HomePage from "../pages/Homepage";
 import ApartmentPage from "../pages/ApartmentPage";
 import About from "../pages/About";
 import { ErrorPageNotFound } from "../pages/ErrorPageNotFound";
